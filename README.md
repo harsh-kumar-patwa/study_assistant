@@ -4,6 +4,9 @@
 
 The Study Assistant is an intelligent query routing system designed to assist students in their studies. It uses Retrieval Augmented Generation (RAG) techniques to provide accurate and contextually appropriate responses to queries across multiple subjects.
 
+## Demo video 
+[Click here](https://www.loom.com/share/75696347a79643448e439c04fe3a3736?sid=4448407e-d44e-4df5-ae06-7d5d70c18c01)
+
 ## Features
 
 - Query classification into specific subjects or general knowledge
