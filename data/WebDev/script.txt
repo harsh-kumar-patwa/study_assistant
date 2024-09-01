@@ -1,0 +1,90 @@
+Professor: Hello, class! Today, we're going to talk about responsive web design using CSS media queries. Who can tell me what responsive design means?
+
+Student 1: It's about making websites that look good on all devices, right?
+
+Professor: That's right! And why is this important?
+
+Student 2: Because people use all kinds of devices to browse the web nowadays - phones, tablets, desktops.
+
+Professor: Exactly. Now, let's look at how we can use CSS media queries to achieve this. I'm going to write a basic HTML structure, and then we'll style it responsively.
+
+[Professor writes HTML on the board]
+
+```html
+
+  
+    My Responsive Website
+  
+  
+    
+      Home
+      About
+      Contact
+    
+  
+  
+    
+      Main Content
+      This is the main content of the page.
+    
+    
+      Sidebar
+      This is some sidebar content.
+    
+  
+  
+    &copy; 2023 My Website
+  
+
+```
+
+Professor: Now, let's start with our base CSS. How should we structure our layout for larger screens?
+
+Student 3: We could use flexbox or grid to create a two-column layout?
+
+Professor: Great idea! Let's use flexbox. Can someone suggest how we might set this up?
+
+Student 4: We could make the main content area a flex container, with the article taking up more space than the aside.
+
+Professor: Perfect! Let's write that out.
+
+[Professor writes CSS on the board]
+
+```css
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+```
+
+Professor: Now, here's where media queries come in. How can we adjust this for smaller screens?
+
+Student 1: We could stack the article and aside vertically instead of side-by-side.
+
+Professor: Excellent! Let's write a media query to do that.
+
+[Professor adds a media query to the CSS]
+
+```css
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
+```
+
+Professor: Can anyone think of other adjustments we might want to make for smaller screens?
+
+[The lecture continues with discussions about font sizes, navigation layout, and other responsive design techniques.]
